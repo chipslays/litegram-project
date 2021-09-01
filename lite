@@ -1,0 +1,53 @@
+#!/usr/bin/env php
+<?php
+
+use Litegram\Cli;
+use Litegram\Plugins\Database;
+use Litegram\Database\Migrations\Migration;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$config = require __DIR__ . '/config/bot.php';
+
+$bot = bot($config)->plugins([Database::class]);
+
+switch ($argv[1] ?? null) {
+    case 'migrate:up':
+        Migration::up();
+        Cli::line('{light_green}✅ Migration has been UP.');
+        break;
+
+    case 'migrate:down':
+        if (Cli::ask('{yellow}You 100% sure for DOWN migration???') == 'y') {
+            Migration::down();
+            Cli::line('{light_green}✅ Migration has been DOWN.');
+        } else {
+            Cli::line('{cyan}OK, action canceled.');
+        }
+        break;
+
+    case 'webhook:set':
+        Cli::line('{cyan}' . print_r($bot->setWebhook()->toArray(), true));
+        break;
+
+    case 'webhook:delete':
+        if (Cli::ask('{yellow}You 100% sure for DELETE webhook???') == 'y') {
+            Cli::line('{cyan}' . print_r($bot->deleteWebhook()->toArray(), true));
+        } else {
+            Cli::line('{cyan}OK, action canceled.');
+        }
+        break;
+
+    case 'webhook:info':
+        Cli::line('{cyan}' . print_r($bot->getWebhookInfo()->toArray(), true));
+        break;
+
+    default:
+    Cli::line("{cyan}Commands:
+    - php lite migrate:up       [Create tables]
+    - php lite migrate:down     [Drop tables]
+    - php lite webhook:set      [Set webhook]
+    - php lite webhook:delete   [Delete webhook]
+    - php lite webhook:info     [Get webhook info]");
+        break;
+}
