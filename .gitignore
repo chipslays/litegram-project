@@ -1,3 +1,10 @@
 .vscode
 vendor
 composer.lock
+config/bot.php
+
+storage/bot/logs/*
+!storage/bot/logs/.gitkeep
+
+storage/bot/store/*
+!storage/bot/store/.gitkeep
