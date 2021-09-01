@@ -1,0 +1,16 @@
+{
+    "name": "chipslays/litegram-project",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "chipslays/litegram": "v3.x-dev"
+    },
+    "autoload": {
+        "classmap": ["bot/controllers"]
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php -r \"file_exists(__DIR__ . '/config/bot.php') || copy(__DIR__ . '/config/bot.example.php', __DIR__ . '/config/bot.php');\""
+        ]
+    }
+}
