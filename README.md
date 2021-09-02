@@ -1,4 +1,4 @@
-# 🍃 Litegram Project
+# 📁 Litegram Project
 
 Ready-to-use project structure based on Litegram library.
 
