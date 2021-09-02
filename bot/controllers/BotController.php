@@ -1,13 +1,5 @@
 <?php
 
-use Litegram\Bot;
-use Litegram\Support\Collection;
-
-/**
- * @var Bot $bot
- * @var Collection $config
- * @var Collection $payload
- */
 class BotController extends Controller
 {
     public function start($source = null)

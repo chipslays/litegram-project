@@ -3,7 +3,7 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "chipslays/litegram": "v3.x-dev"
+        "chipslays/litegram": "^3"
     },
     "autoload": {
         "classmap": ["bot/controllers"]

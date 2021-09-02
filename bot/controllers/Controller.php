@@ -1,11 +1,23 @@
 <?php
 
 use Litegram\Bot;
+use Litegram\Support\Collection;
 
 class Controller
 {
+    /**
+     * @var Bot
+     */
     protected $bot;
+
+    /**
+     * @var Collection
+     */
     protected $config;
+
+    /**
+     * @var Collection
+     */
     protected $payload;
 
     public function __construct()
