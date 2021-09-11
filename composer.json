@@ -3,6 +3,7 @@
     "type": "project",
     "license": "MIT",
     "require": {
+        "php": "^7.4|^8.0",
         "chipslays/litegram": "^3"
     },
     "autoload": {
