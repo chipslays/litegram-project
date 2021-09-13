@@ -12,7 +12,7 @@ composer create-project chipslays/litegram-project SuperDuperBot
 
 - [Create](#installation) project via composer or cloning;
 - Go to `config/bot.php` and configure project;
-- Go to `bot/core/bootstrap/plugins.php` and comment/uncomment something.
+- Go to `bot/core/bootstrap/plugins.php` and comment/uncomment something;
 - Add some logic in `bot/brain.php` file;
 - If you want use database, type in Terminal:
 ```bash
