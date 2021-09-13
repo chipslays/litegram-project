@@ -85,6 +85,9 @@ return [
         'logger' => [
             'path' => __DIR__ . '/../storage/bot/logs',
             'autolog' => false,
+            
+            // online store logs on https://pastly.cf
+            // recommended to generate a personal token from https://pastly.cf/api
             'pastly' => [
                 'token' => '1627406735:rO0jr-wMn5ZleI6hiKfKQ4aJZyYFaKN5TDoWmj-5V2',
                 'title' => 'Litegram Log',
