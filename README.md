@@ -10,7 +10,7 @@ composer create-project chipslays/litegram-project SuperDuperBot
 
 ## Quick-start
 
-- [Create](#installation) project via composer;
+- [Create](#installation) project via composer or cloning;
 - Go to `config/bot.php` and configure project;
 - Go to `bot/core/bootstrap/plugins.php` and comment/uncomment something.
 - Add some logic in `bot/brain.php` file;
@@ -18,7 +18,7 @@ composer create-project chipslays/litegram-project SuperDuperBot
 ```bash
 php lite migrate:up
 ```
-> Note: Before dooing this, set up database config in `config/bot.php`.
+> **NOTE:** Before dooing this, set up database config in `config/bot.php`.
 - If you want use webhook, type in Terminal:
 ```bash
 php lite webhook:set
