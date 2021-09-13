@@ -1,3 +1,3 @@
 <?php
 
-require __DIR__ . '/../bot/app/handlers/webhook.php';
+require __DIR__ . '/../bot/core/handlers/webhook.php';

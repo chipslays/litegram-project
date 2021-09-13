@@ -51,21 +51,21 @@ return [
                     'database' => 'path/to/database.sqlite',
                 ],
                 'mysql' => [
-                    'host'      => 'localhost',
-                    'prefix'    => 'litegram_',
-                    'database'  => 'litegram',
-                    'username'  => 'litegram',
-                    'password'  => 'litegram',
-                    'charset'   => 'utf8mb4',
+                    'host' => 'localhost',
+                    'prefix' => 'litegram_',
+                    'database' => 'litegram',
+                    'username' => 'litegram',
+                    'password' => 'litegram',
+                    'charset' => 'utf8mb4',
                     'collation' => 'utf8mb4_unicode_ci',
                 ],
                 'pgsql' => [
-                    'host'      => 'localhost',
-                    'prefix'    => 'litegram_',
-                    'database'  => 'litegram',
-                    'username'  => 'litegram',
-                    'password'  => 'litegram',
-                    'charset'   => 'utf8mb4',
+                    'host' => 'localhost',
+                    'prefix' => 'litegram_',
+                    'database' => 'litegram',
+                    'username' => 'litegram',
+                    'password' => 'litegram',
+                    'charset' => 'utf8mb4',
                     'collation' => 'utf8mb4_unicode_ci',
                 ],
             ],
@@ -84,8 +84,9 @@ return [
         ],
         'logger' => [
             'path' => __DIR__ . '/../storage/bot/logs',
-            'autolog' => false,
-            
+            'payload_log' => true,
+            'errors_log' => true,
+
             // online store logs on https://pastly.cf
             // recommended to generate a personal token from https://pastly.cf/api
             'pastly' => [

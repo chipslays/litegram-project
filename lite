@@ -42,8 +42,13 @@ switch ($argv[1] ?? null) {
         Cli::line('{cyan}' . print_r($bot->getWebhookInfo()->toArray(), true));
         break;
 
+    case 'polling':
+        passthru('php bot/core/handlers/longpoll.php');
+        break;
+
     default:
-    Cli::line("{cyan}Commands:
+        Cli::line("{cyan}List of available commands:{reset}{green}
+    - php lite polling          [Start long-polling]
     - php lite migrate:up       [Create tables]
     - php lite migrate:down     [Drop tables]
     - php lite webhook:set      [Set webhook]
