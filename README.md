@@ -1,6 +1,6 @@
 # 📁 Litegram Project
 
-Ready-to-use project structure based on Litegram library.
+Ready-to-use project structure based on [Litegram](https://github.com/chipslays/litegram) library.
 
 ## Installation
 
