@@ -110,6 +110,18 @@ return [
                 ],
             ],
         ],
+        'user' => [
+            /**
+             * Allowed interval in seconds between messages from one user.
+             * Handled by you.
+             */
+            'floot_time' => 0,
+
+            /**
+             * Additinal data for insert on new user.
+             */
+            'data' => [],
+        ],
         'localization' => [
             'driver' => 'yaml',
             'drivers' => [
