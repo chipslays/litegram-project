@@ -154,6 +154,6 @@ return [
         ],
     ],
     'components' => [
-        // Set in /bot/bootstrap/components.php
+        // Set in `bot/core/bootstrap/components.php`
     ],
 ];
