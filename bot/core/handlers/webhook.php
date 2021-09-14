@@ -1,7 +1,6 @@
 <?php
 
 use Litegram\Keyboard;
-use Litegram\Debug\Payloads;
 
 require __DIR__ . '/../../../vendor/autoload.php';
 
@@ -11,7 +10,7 @@ $components = require __DIR__ . '/../bootstrap/components.php';
 $config = require __DIR__ . '/../../../config/bot.php';
 $config['components'] = $components;
 
-$bot = bot($config)->webhook(Payloads::START)->plugins($plugins);
+$bot = bot($config)->webhook()->plugins($plugins);
 
 foreach (glob(__DIR__ . '/../../resources/keyboards/*.php') as $keyboard) {
     Keyboard::add(require $keyboard);
