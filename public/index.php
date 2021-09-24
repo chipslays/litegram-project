@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Litegram</title>
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-    </head>
 
-    <body class="bg-gray-900 text-gray-200">
-        <div class="max-w-xl mx-auto w-full mt-8">
-            <div class="rounded-lg border-4 border-gray-700 border-dashed p-4 text-center">
-                <div class="text-4xl font-black uppercase">Litegram</div>
-                <div class="text-sm font-medium text-green-500 mt-4 animate-pulse">now is online</div>
-                <div class="mt-4 text-sm font-medium uppercase border-t-2 border-gray-700 pt-4">
-                    <a href="https://github.com/chipslays/litegram" target="_blank" class="text-gray-400 hover:text-gray-500 transition duration-200">Github</a> <span class="text-gray-500">•</span>
-                    <a href="https://github.com/chipslays/litegram/tree/v3.x.x/docs/ru" target="_blank" class="text-gray-400 hover:text-gray-500 transition duration-200">Docs v3.x</a>
-                </div>
-            </div>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Litegram</title>
+
+    <style>
+        body {
+            position: relative
+        }
+
+        body {
+            margin: 0;
+            background: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+</head>
+
+<body style="text-align: center; background-color: #f7f7ff; color: #495867">
+    <h1 style="font-size: 4rem; line-height: 8px;">🎉</h1>
+    <h2>Yay, congrats!</h2>
+    <p>Litegram now is online.</p>
+
+    <a href="https://github.com/chipslays/litegram" target="_blank" rel="noopener noreferrer" style="color: #fe5f55">Github</a>
+    <br>
+    <a href="https://github.com/chipslays/litegram/tree/v3.x.x/docs" target="_blank" rel="noopener noreferrer" style="color: #fe5f55;">Documentaion</a>
+</body>
+
 </html>
