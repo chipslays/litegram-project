@@ -18,7 +18,7 @@ composer create-project chipslays/litegram-project SuperDuperBot
 ```bash
 php lite migrate:up
 ```
-> **NOTE:** Before dooing this, set up database config in `config/bot.php`.
+> **NOTE:** Before doing this, set up database config in `config/bot.php`.
 - If you want use webhook, type in Terminal:
 ```bash
 php lite webhook:set
