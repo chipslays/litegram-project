@@ -60,6 +60,12 @@ return [
             '436432850' => 'password',
         ],
     ],
+    'errors' => [
+        'path' => __DIR__ . '/../storage/bot/errors',
+        'telegram' => true,
+        'php' => true,
+        'php_level' => E_ALL,
+    ],
     'plugins' => [
         'storage' => [
             'driver' => null, // null - store data in RAM (useful for long-poll)
