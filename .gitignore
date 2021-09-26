@@ -8,3 +8,6 @@ storage/bot/logs/*
 
 storage/bot/store/*
 !storage/bot/store/.gitkeep
+
+storage/bot/errors/*
+!storage/bot/errors/.gitkeep
