@@ -9,6 +9,11 @@ require __DIR__ . '/vendor/autoload.php';
 
 $config = require __DIR__ . '/config/bot.php';
 
+$config['errors'] = [
+    'telegram' => false,
+    'php' => false,
+];
+
 $bot = bot($config)->plugins([Database::class]);
 
 switch ($argv[1] ?? null) {
