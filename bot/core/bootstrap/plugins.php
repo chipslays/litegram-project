@@ -3,6 +3,7 @@
 use Litegram\Plugins\User;
 use Litegram\Plugins\Talk;
 use Litegram\Plugins\Cache;
+use Litegram\Plugins\State;
 use Litegram\Plugins\Logger;
 use Litegram\Plugins\Session;
 use Litegram\Plugins\Storage;
@@ -14,6 +15,7 @@ return [
     // User::class,
     Storage::class,
     Session::class,
+    State::class,
     Localization::class,
     Logger::class,
     Talk::class,
