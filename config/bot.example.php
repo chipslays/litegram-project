@@ -62,8 +62,22 @@ return [
     ],
     'errors' => [
         'path' => __DIR__ . '/../storage/bot/errors',
+
+        /**
+         * Store logs with Telegram request errors.
+         */
         'telegram' => true,
+
+        /**
+         * Store logs with PHP runtime errors.
+         */
         'php' => true,
+
+        /**
+         * PHP log level
+         * Example: E_ERROR | E_WARNING | E_PARSE
+         * @see https://www.php.net/manual/en/errorfunc.constants.php
+         */
         'php_level' => E_ALL,
     ],
     'plugins' => [
