@@ -156,8 +156,16 @@ return [
         ],
         'logger' => [
             'path' => __DIR__ . '/../storage/bot/logs',
+            
+            /**
+             * Store local logs.
+             */
             'payload_log' => true,
-            'errors_log' => true,
+            
+            /**
+             * Collect all incoming messages in database.
+             /*
+            'collect_messages' => true,
 
             /**
              * Auto-upload logs via Logger::upload() method.
