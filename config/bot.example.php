@@ -67,6 +67,11 @@ return [
          * Store logs with Telegram request errors.
          */
         'telegram' => true,
+        
+        /**
+         * Show errors in terminal.
+         */
+        'telegram_output' => true,
 
         /**
          * Store logs with PHP runtime errors.
